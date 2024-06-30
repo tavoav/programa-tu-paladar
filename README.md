@@ -1,1 +1,1 @@
-# programa-tu-paladar-database
+# programa-tu-paladar
