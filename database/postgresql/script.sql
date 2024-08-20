@@ -21,6 +21,7 @@ CREATE TABLE user_accounts (
     profile_picture_url VARCHAR(255),
     bio TEXT,
     is_active BOOLEAN DEFAULT TRUE,
+    hashed_activation_code CHAR(64) UNIQUE NULL,
     last_login TIMESTAMPTZ
 );
 

@@ -30,6 +30,7 @@ CREATE TABLE user_accounts (
     profile_picture_url NVARCHAR(255),
     bio NVARCHAR(MAX),
     is_active BIT DEFAULT 1,
+    hashed_activation_code CHAR(64) UNIQUE NULL,
     last_login DATETIMEOFFSET
 );
 GO
